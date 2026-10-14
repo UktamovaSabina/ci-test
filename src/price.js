@@ -11,7 +11,7 @@ function totalPrice(prices) {
 
 // Method 2: take a percent off a price. (it has a hidden bug)
 function applyDiscount(price, percent) {
-  return price - percent;
+  return price - (percent * price) / 100;
 }
 
 module.exports = { totalPrice, applyDiscount };
