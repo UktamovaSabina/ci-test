@@ -6,7 +6,7 @@ function formatOrder(name, prices) {
 
 module.exports = { formatOrder };
 
-function receipt(name prices) {
+function receipt(name, prices) {
   const total = totalPrice(prices);
   if (prices.length === 0) {
     return name + ' ordered nothing';
